@@ -39,10 +39,3 @@ jobs:
     # Build the project with Gradle
     - name: Build APK
       run: ./gradlew assembleDebug
-
-    # Upload the APK as an artifact
-    - name: Upload APK
-      uses: actions/upload-artifact@v3
-      with:
-        name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
